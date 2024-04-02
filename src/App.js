@@ -1,8 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './index.css';
+
 import MainPage from './pages/MainPage';
-import RstrDetail from './pages/RstrDetailPage';
+import LoginPage from './pages/LoginPage';
+import SignUpPage from './pages/SignUpPage';
+import RstrDetailPage from './pages/RstrDetailPage';
 import RstrListPage from './pages/RstrListPage';
 
 function App() {
@@ -11,7 +14,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/rstr/detail" element={<RstrDetail />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/rstr/1" element={<RstrDetailPage />} />
           <Route path="/rstr" element={<RstrListPage />} />
         </Routes>
       </Router>

@@ -1,11 +1,12 @@
 import React from 'react';
+import RstrDetail from '../containers/Rstr/Detail/RstrDetail';
 
-const RstrDetail = () => {
+const RstrDetailPage = () => {
     return (
-        <div>
-            음식점 상세페이지
+        <div className={'common-container'} style={{ fontFamily: 'Gmarket Sans Light' }}>
+            <RstrDetail />
         </div>
     )
 }
 
-export default RstrDetail;
+export default RstrDetailPage;

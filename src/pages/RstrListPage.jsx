@@ -1,8 +1,8 @@
 import React from 'react';
 
-const RstrListPage = () => {
+export const RstrListPage = () => {
     return (
-        <div>
+        <div className={'common-container'} style={{ fontFamily: 'Gmarket Sans Light' }}>
             음식점 리스트페이지
         </div>
     )

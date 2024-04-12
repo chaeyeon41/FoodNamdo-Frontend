@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './index.css';
 
@@ -11,6 +12,11 @@ import RstrListPage from './pages/RstrListPage';
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <title>푸드남도</title>
+        {/* <meta name="description" content="설명" /> */}
+        {/* <link rel="icon" type="image/png" href="%PUBLIC_URL%/logo.png" /> */}
+      </Helmet>
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />} />

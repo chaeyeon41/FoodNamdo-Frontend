@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { rstrInfo } from "../../../data/rstr/RstrInfo";
 import styled from "styled-components";
 import palette from "../../../styles/palette";
 import PlaceIcon from '@mui/icons-material/Place';
@@ -6,20 +7,6 @@ import CallIcon from '@mui/icons-material/Call';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import StarIcon from '@mui/icons-material/Star';
-
-const rstrInfo = {
-    rstr_id: 1,
-    rstr_name: "OO식당",
-    rstr_review_rating: 4.9,
-    rstr_review_count: 10,
-    // count는 따로 저장된 데이터값은 따로 없음
-    rstr_naver_rating: 4.2,
-    rstr_address: "경상남도 OO시 OO로 54",
-    rstr_tel: "055-111-1111",
-    example: true,
-    relax: true,
-    rstr_favorite_count: 12,
-}
 
 const RstrBriefInfoContainer = styled.div`
     display: flex;
@@ -179,7 +166,10 @@ const RstrBriefInfo = () => {
                     <StyledPlaceIcon />
                     <div>{rstrInfo.rstr_address}</div>
                 </RstrIconAndInfo>
-                <div className='scroll-map centered-flex' onClick={MoveToTop}>지도보러가기</div>
+                <div
+                    className='scroll-map centered-flex'
+                    onClick={MoveToTop}
+                >지도보러가기</div>
             </RstrInfos>
             <RstrIconAndInfo>
                 <StyledCallIcon />

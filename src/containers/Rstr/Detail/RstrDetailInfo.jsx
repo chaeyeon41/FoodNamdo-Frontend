@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import AdditionInfo from '../../../components/Rstr/Detail/AdditionInfo';
+import RstrMap from '../../../components/Rstr/Detail/RstrMap';
 
 const RstrDetailInfoContainer = styled.div`
     padding: 10px;
@@ -45,7 +46,10 @@ const RstrDetailInfo = () => {
             </InfoContainer>
             <InfoContainer>
                 <InfoTitle>음식점 위치</InfoTitle>
-                <InfoContent></InfoContent>
+                <InfoContent>
+                    <div>경상남도 사천시 각산로 54</div>
+                    <RstrMap />
+                </InfoContent>
             </InfoContainer>
         </RstrDetailInfoContainer>
     )

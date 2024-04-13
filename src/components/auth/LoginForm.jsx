@@ -1,7 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
-import '../../../src/styles/common.css'
-import '../../../src/styles/authform.css'
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { Link } from "react-router-dom";

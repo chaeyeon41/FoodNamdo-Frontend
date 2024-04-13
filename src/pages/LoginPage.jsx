@@ -1,10 +1,9 @@
 import React from 'react';
-import Login from '../containers/Login/Login';
-
+import LoginForm from "../components/auth/LoginForm";
 const LoginPage = () => {
     return (
         <div className={'common-container'} style={{ fontFamily: 'Gmarket Sans Medium' }}>
-            <Login />
+            <LoginForm />
         </div>
     )
 }

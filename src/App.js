@@ -2,7 +2,8 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './index.css';
-
+import '../src/styles/common.css';
+import '../src/styles/authform.css';
 import MainPage from './pages/MainPage';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';

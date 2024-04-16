@@ -23,16 +23,18 @@ const RstrBriefInfoContainer = styled.div`
 
 const RstrName = styled.div`
     font-family: 'Gmarket Sans Bold';
-    font-size: 2.2rem;
+    font-size: 2rem;
 `
 
 const RstrReviewInfo = styled.div`
     & > div {
         margin-bottom: 0.3rem;
+        font-size: 0.9rem;
     }
 
     & > div > span {
         font-family: 'Gmarket Sans Bold';
+        font-size: 0.9rem;
         margin-right: 0.3rem;
         color: #03c75a;
     }
@@ -49,13 +51,17 @@ const RstrInfos = styled.div`
         border-radius: 10px;
         width: 16%;
         height: 1.8rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         box-shadow: 2px 1px 2px ${palette.gray};
     }
 
     .scroll-map:hover {
         cursor: pointer;
         background-color: ${palette.lightblue2};
+    }
+
+    div {
+        font-size: 0.9rem;
     }
 `;
 
@@ -102,6 +108,10 @@ const FavoriteButton = styled.div`
 const RstrIconAndInfo = styled.div`
     display: flex;
     align-items: center;
+
+    div {
+        font-size: 0.9rem;
+    }
 `;
 
 const StyledStarIcon = styled(StarIcon)`
@@ -130,12 +140,7 @@ const StyledBookmarkIcon = styled(BookmarkIcon)`
 `;
 
 const RstrBriefInfo = () => {
-    // const [rstrInfo, setRstrInfo] = useState(rstrInfo);
     const [isFavoriate, setIsFavoriate] = useState(true);
-
-    // useEffect(() => {
-    //     setRstrInfo(rstrInfo);
-    // }, [])
 
     const MoveToTop = () => {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
@@ -143,14 +148,15 @@ const RstrBriefInfo = () => {
 
     const toggleFavorite = () => {
         setIsFavoriate(!isFavoriate);
+        // 찜 목록으로 이동
     }
 
     return (
         <RstrBriefInfoContainer>
             <RstrName>{rstrInfo.rstr_name}</RstrName>
             <RstrReviewInfo>
-                <RstrIconAndInfo style={{ fontSize: '1.3rem' }}>
-                    <StyledStarIcon style={{ fontSize: '2rem' }} />
+                <RstrIconAndInfo style={{ fontSize: '1rem' }}>
+                    <StyledStarIcon style={{ fontSize: '1.8rem' }} />
                     {`${rstrInfo.rstr_review_rating} (${rstrInfo.rstr_review_count}명)`}
                 </RstrIconAndInfo>
                 {

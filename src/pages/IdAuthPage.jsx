@@ -1,11 +1,12 @@
 import React from 'react';
-import SignUpForm from '../components/auth/SignUpForm';
-const SignUpPage = () => {
+import IdAuthForm from '../components/auth/IdAuthForm';
+
+const IdAuthPage = () => {
     return (
         <div className={'common-container'} style={{ fontFamily: 'Gmarket Sans Medium' }}>
-            <SignUpForm />
+            <IdAuthForm />
         </div>
     )
 }
 
-export default SignUpPage;
+export default IdAuthPage;

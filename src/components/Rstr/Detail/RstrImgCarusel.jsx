@@ -8,7 +8,6 @@ const Container = styled.div`
   width: 35%;
   padding: 0 2rem;
   position: relative;
-
 `;
 
 const StyledSlider = styled(Slider)`

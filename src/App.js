@@ -9,6 +9,8 @@ import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import RstrDetailPage from './pages/RstrDetailPage';
 import RstrListPage from './pages/RstrListPage';
+import IdAuthPage from './pages/IdAuthPage';
+import PwAuthPage from './pages/PwAuthPage';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/find-pw" element={<PwAuthPage />} />
+          <Route path="/find-id" element={<IdAuthPage />} />
           <Route path="/rstr/1" element={<RstrDetailPage />} />
           <Route path="/rstr" element={<RstrListPage />} />
         </Routes>

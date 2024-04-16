@@ -12,7 +12,7 @@ const RstrDetailMain = () => {
         <RstrDetailMainContainer
             style={{ fontFamily: 'Gmarket Sans Medium' }}
         >
-            <div style={{ margin: '5px 50px' }}>
+            <div style={{ margin: '5px 50px', fontSize: '0.8rem' }}>
                 <span>경상남도</span>
                 <span> | </span>
                 <span>한식</span>

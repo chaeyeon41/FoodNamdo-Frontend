@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { rstrInfo } from "../../../data/rstr/RstrInfo";
+import { rstrInfo } from '../../../../data/rstr/RstrInfo';
 import styled from "styled-components";
-import palette from "../../../styles/palette";
+import palette from "../../../../styles/palette";
 import PlaceIcon from '@mui/icons-material/Place';
 import CallIcon from '@mui/icons-material/Call';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
@@ -49,9 +49,10 @@ const RstrInfos = styled.div`
     .scroll-map {
         background-color: ${palette.lightblue};
         border-radius: 10px;
-        width: 16%;
-        height: 1.8rem;
-        font-size: 0.7rem;
+        width: 100px;
+        height: 30px;
+
+        font-size: 0.75rem;
         box-shadow: 2px 1px 2px ${palette.gray};
     }
 
@@ -114,6 +115,12 @@ const RstrIconAndInfo = styled.div`
     }
 `;
 
+const FavoriteButtonWrapper = styled.div`
+    display: flex;
+    justify-content: flex-end;
+`
+
+
 const StyledStarIcon = styled(StarIcon)`
     color: ${palette.yellow};
     margin-bottom: 1px;
@@ -126,7 +133,7 @@ const StyledPlaceIcon = styled(PlaceIcon)`
 
 const StyledCallIcon = styled(CallIcon)`
     color: ${palette.darkblue1};
-    argin-bottom: 1px;
+    margin-bottom: 1px;
 `;
 
 const StyledBookmarkBorderIcon = styled(BookmarkBorderIcon)`
@@ -141,7 +148,6 @@ const StyledBookmarkIcon = styled(BookmarkIcon)`
 
 const RstrBriefInfo = () => {
     const [isFavoriate, setIsFavoriate] = useState(true);
-
     const MoveToTop = () => {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
     }
@@ -153,6 +159,10 @@ const RstrBriefInfo = () => {
 
     return (
         <RstrBriefInfoContainer>
+            <CertificationMarks>
+                {rstrInfo.example && <div id='example-mark'>모범식당</div>}
+                {rstrInfo.relax && <div id='relax-mark'>안심식당</div>}
+            </CertificationMarks>
             <RstrName>{rstrInfo.rstr_name}</RstrName>
             <RstrReviewInfo>
                 <RstrIconAndInfo style={{ fontSize: '1rem' }}>
@@ -181,22 +191,17 @@ const RstrBriefInfo = () => {
                 <StyledCallIcon />
                 <div>{rstrInfo.rstr_tel}</div>
             </RstrIconAndInfo>
-            <RstrInfos>
-                <CertificationMarks>
-                    {rstrInfo.example && <div id='example-mark'>모범식당</div>}
-                    {rstrInfo.relax && <div id='relax-mark'>안심식당</div>}
-                </CertificationMarks>
+            <FavoriteButtonWrapper>
                 <FavoriteButton className='centered-flex' onClick={toggleFavorite}>
                     <div>
-                        {
-                            isFavoriate ?
-                                <StyledBookmarkIcon style={{ fontSize: '2.2rem' }} /> :
-                                <StyledBookmarkBorderIcon style={{ fontSize: '2.2rem' }} />
+                        {isFavoriate ?
+                            <StyledBookmarkIcon style={{ fontSize: '2.2rem' }} /> :
+                            <StyledBookmarkBorderIcon style={{ fontSize: '2.2rem' }} />
                         }
                     </div>
                     <div className='favorite-count'>{rstrInfo.rstr_favorite_count}</div>
                 </FavoriteButton>
-            </RstrInfos>
+            </FavoriteButtonWrapper>
         </RstrBriefInfoContainer>
     )
 }

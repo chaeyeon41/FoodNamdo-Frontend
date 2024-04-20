@@ -40,7 +40,7 @@ const RstrMap = () => {
         }
     }, [isKakaoMapLoaded]); // isKakaoMapLoaded 상태가 변경될 때만 실행
 
-    return <div id="map" style={{ width: '80%', height: '20rem' }}></div>;
+    return <div id="map" style={{ marginTop: '5px', width: '600px', height: '20rem' }}></div>;
 };
 
 export default RstrMap;

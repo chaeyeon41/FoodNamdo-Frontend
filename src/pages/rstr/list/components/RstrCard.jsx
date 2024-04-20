@@ -1,14 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-import palette from '../../../styles/palette';
+import palette from '../../../../styles/palette';
 import StarIcon from '@mui/icons-material/Star';
+import { useNavigate } from 'react-router-dom';
 
 const RstrCardContainer = styled.div`
-    margin: 0.3rem;
+    margin: 5px;
     padding: 0.5rem;
-    width: 10.6rem;
+    width: 170px;
     border-radius: 10px;
-    background-color: ${palette.lightblue};
+    border: 1px solid ${palette.lightblue};
+    box-shadow: 2px 1px 2px ${palette.gray};
+    // background-color: ${palette.lightblue};
+    
+    &:hover {
+        cursor: pointer;
+    }
 `
 const ImgContainer = styled.div`
     width: 100%;
@@ -19,36 +26,45 @@ const ImgContainer = styled.div`
 
 const Img = styled.img`
     width: 100%;
-    height: 100%; // 높이도 100%로 설정합니다.
-    object-fit: cover; // 컨테이너에 꽉 차게 조정
+    height: 100%;
+    object-fit: cover;
 `;
 const RstrInfo = styled.div`
     display: flex;
+    align-items: center;
     &.title {    
-        padding: 0.5rem 0;
+        padding: 8px 0 0 0;
         font-family: 'Gmarket Sans Bold';
         justify-content: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     &.info {
         justify-content: space-between;
         display: flex;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
 
     &.info .rating {
         display: flex;
+        align-items: center;
+        font-size: 0.8rem;
     }
 `;
 
 const StyledStarIcon = styled(StarIcon)`
     color: ${palette.yellow};
+    color: #FFD700;
 `;
 
 const RstrCard = () => {
+
+    const navigate = useNavigate();
+
     return (
-        <RstrCardContainer>
+        <RstrCardContainer onClick={() => {
+            navigate(`/rstr/${1}`)
+        }}>
             <ImgContainer>
                 <Img src={'/img/cat1.jpg'} alt={'이미지'} />
             </ImgContainer>

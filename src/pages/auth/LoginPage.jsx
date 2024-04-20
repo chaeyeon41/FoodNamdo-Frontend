@@ -1,17 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
-import '../../../src/styles/common.css'
-import '../../../src/styles/authform.css'
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { Link } from "react-router-dom";
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+import { styled } from '@mui/system';
+import AuthLogo from './components/AuthLogo';
 
-const LoginForm = () => {
+const StyledLink = styled(Link)({
+    fontSize: '0.75rem',
+    fontFamily: 'Gmarket Sans Medium',
+    color: '#BEBEBE',
+    marginRight: '16px',
+})
+
+const LoginPage = () => {
     return (
         <div className='auth-form-container centered-flex'>
-            <Link to={'/'}>
-                <img src={process.env.PUBLIC_URL + '/logo.png'} />
-            </Link>
+            <AuthLogo />
             <form
                 className="auth-form"
                 action="http://localhost:8080/login"
@@ -40,10 +45,27 @@ const LoginForm = () => {
                 </button>
             </form>
             <div>
-
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        justifyContent: 'center',
+                        typography: 'body1',
+                    }}
+                >
+                    <StyledLink href="/find-id" underline="hover">
+                        {'아이디 찾기'}
+                    </StyledLink>
+                    <StyledLink href="/find-pw" underline="hover">
+                        {'비밀번호 찾기'}
+                    </StyledLink>
+                    <StyledLink href="/signup" underline="hover">
+                        {'회원가입'}
+                    </StyledLink>
+                </Box>
             </div>
         </div>
     );
-};
+}
 
-export default LoginForm;
+export default LoginPage;

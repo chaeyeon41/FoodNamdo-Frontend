@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import PersonIcon from '@mui/icons-material/Person';
 import PhoneIcon from '@mui/icons-material/Phone';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
-import AuthLogo from "./AuthLogo"
+import AuthLogo from './components/AuthLogo';
 
-const IdAuthForm = () => {
 
+
+const IdAuthPage = () => {
     const navigate = useNavigate();
 
     const [name, setName] = useState('');
@@ -19,7 +20,7 @@ const IdAuthForm = () => {
 
             });
             console.log(response.data);
-            navigate('/');
+            navigate('/login');
         } catch (error) {
             console.log(error);
         }
@@ -27,9 +28,7 @@ const IdAuthForm = () => {
 
     return (
         <div className="auth-form-container centered-flex">
-            <div onClick={() => { navigate('/') }}>
-                <img src={process.env.PUBLIC_URL + '/logo.png'} />
-            </div>
+            <AuthLogo />
             <div className="auth-form">
                 <div className="input-form">
                     <PersonIcon className="icons" />
@@ -71,4 +70,4 @@ const IdAuthForm = () => {
     );
 }
 
-export default IdAuthForm;
+export default IdAuthPage;

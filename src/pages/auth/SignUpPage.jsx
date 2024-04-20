@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import palette from "../../styles/palette";
 import PersonIcon from '@mui/icons-material/Person';
 import LockIcon from '@mui/icons-material/Lock';
 import PhoneIcon from '@mui/icons-material/Phone';
@@ -6,14 +7,20 @@ import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
-import AuthLogo from "./AuthLogo"
 
-import dayjs from 'dayjs';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
-import { TextField } from '@mui/material';
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+import { styled } from '@mui/system';
+import AuthLogo from './components/AuthLogo';
 
-const SignUpForm = () => {
+const StyledLink = styled(Link)({
+    fontSize: '0.75rem',
+    fontFamily: 'Gmarket Sans Medium',
+    color: `${palette.darygray}`,
+    marginRight: '16px',
+})
+
+const SignUpPage = () => {
     const navigate = useNavigate();
 
     const [id, setId] = useState('');
@@ -21,7 +28,6 @@ const SignUpForm = () => {
     const [name, setName] = useState('');
     const [nickname, setNickname] = useState('');
     const [phoneNum, setPhoneNum] = useState('');
-    const [birthDate, setBirthDate] = useState(dayjs());
     const [showPassword, setShowPassword] = useState(false);
 
 
@@ -32,7 +38,6 @@ const SignUpForm = () => {
                 password: password,
                 name: name,
                 phone: phoneNum,
-                birth: birthDate,
             });
             console.log(response.data);
             alert("푸드남도 회원가입을 축하합니다!");
@@ -40,10 +45,6 @@ const SignUpForm = () => {
         } catch (error) {
             console.error(error);
         }
-    };
-
-    const onChangeDate = (newDate) => {
-        setBirthDate(dayjs(newDate));
     };
 
     const toggleShowPassword = () => {
@@ -63,6 +64,9 @@ const SignUpForm = () => {
                         required
                         onChange={(e) => setId(e.target.value)}
                     />
+                    <div className="btn">
+                        중복체크
+                    </div>
                 </div>
                 <div className="input-form">
                     <LockIcon className="icons" />
@@ -77,10 +81,14 @@ const SignUpForm = () => {
                         <VisibilityOutlinedIcon
                             className="icons"
                             onClick={toggleShowPassword}
-                            style={{ color: "#FFD93D" }}
+                            style={{ color: `${palette.lightblue}` }}
                         />
                     ) : (
-                        <VisibilityOffOutlinedIcon className="icons" onClick={toggleShowPassword} />
+                        <VisibilityOffOutlinedIcon
+                            className="icons"
+                            onClick={toggleShowPassword}
+                            style={{ color: `${palette.lightblue}` }}
+                        />
                     )}
                 </div>
                 <div className="input-form">
@@ -112,35 +120,30 @@ const SignUpForm = () => {
                         required
                         onChange={(e) => setPhoneNum(e.target.value)}
                     />
-                </div>
-                <div className="input-form">
-                    <LocalizationProvider dateAdapter={AdapterDayjs}>
-                        <DatePicker
-                            label="생년월일"
-                            value={birthDate}
-                            onChange={onChangeDate}
-                            maxDate={dayjs()}
-                            renderInput={(params) => (
-                                <TextField
-                                    {...params}
-                                    sx={{
-                                        '& .MuiInputBase-input': { color: 'blue', fontWeight: 'bold' },
-                                        '& .MuiInputBase-root': { backgroundColor: '#f3f3f3', borderRadius: '10px' },
-                                        '& .MuiOutlinedInput-notchedOutline': { borderColor: 'green' },
-                                        ':hover .MuiOutlinedInput-notchedOutline': { borderColor: 'red' },
-                                        '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: 'purple', borderWidth: 2 },
-                                    }}
-                                />
-                            )}
-                        />
-                    </LocalizationProvider>
+                    <div className="btn">
+                        인증요청
+                    </div>
                 </div>
                 <div className="auth-button" onClick={onClickSignUp}>
                     회원가입
                 </div>
             </div>
+            <div>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        justifyContent: 'center',
+                        typography: 'body1',
+                    }}
+                >
+                    <StyledLink href="/login" underline="hover">
+                        {'로그인 하러가기'}
+                    </StyledLink>
+                </Box>
+            </div>
         </div >
     );
 }
 
-export default SignUpForm;
+export default SignUpPage;

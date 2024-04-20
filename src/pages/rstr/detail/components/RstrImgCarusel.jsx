@@ -40,13 +40,17 @@ const ImageWrapper = styled.div`
     margin: 0 auto;
     max-width: 90%;
     height: auto;
+
+    width: 100%;
+    height: 16rem;
+    overflow: hidden;
     border-radius: 20px;
 `;
 
 const Img = styled.img`
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    object-fit: cover;
 `;
 
 const rstrImageInfo = [

@@ -11,3 +11,6 @@ export const rstrInfo = {
     relax: true,
     rstr_favorite_count: 12,
 }
+
+export const rstrList = [
+]

@@ -69,15 +69,16 @@
     font-family: 'Gmarket Sans Medium';
     font-size: 0.7rem;
     font-weight: 300;
-    width: 3rem;
+    width: 4rem;
     height: 1.5rem;
     line-height: 1.5rem;
     border-radius: 15px;
-    background-color: #FFD93D;
+    border: 1px solid #3F72AF;
+    color: #3F72AF;
     text-align: center;
 
     &:hover {
-        background-color: #FFD93D;
+        background-color: #DBE2EF;
     }
 }
 
@@ -95,5 +96,7 @@
 
     &:hover {
         cursor: pointer;
+        background-color: #F9F7F7;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 }

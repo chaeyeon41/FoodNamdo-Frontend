@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import palette from "../../../styles/palette";
+import palette from '../../../../styles/palette';
 import PetsIcon from '@mui/icons-material/Pets';
 import LocalParkingIcon from '@mui/icons-material/LocalParking';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
+
 const AdditionInfoContainer = styled.div`
     display: flex;
 `;
@@ -15,6 +16,7 @@ const AdditionInfoContent = styled.div`
     border: 1px solid ${palette.darkblue1};
     border-radius: 50%;
     text-align: center;
+     box-shadow: 2px 1px 2px ${palette.gray};
 `;
 
 const AdditionInfoIcon = styled.div`

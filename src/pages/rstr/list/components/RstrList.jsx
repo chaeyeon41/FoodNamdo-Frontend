@@ -10,7 +10,7 @@ import PaginationItem from '@mui/material/PaginationItem';
 const RstrListContainer = styled.div`
     padding: 0 5px;
     width: 100%;
-    border: 1px solid gray;
+    // border: 1px solid gray;
     display: flex;
     flex-direction: column;
     .total-rstr-num {

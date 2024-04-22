@@ -56,17 +56,17 @@ const Img = styled.img`
 const rstrImageInfo = [
     {
         id: 1,
-        src: require('./img/cat1.jpg'),
+        src: require('../img/cat1.jpg'),
         name: '첫번째 고양이'
     },
     {
         id: 2,
-        src: require('./img/cat2.jpg'),
+        src: require('../img/cat2.jpg'),
         name: '두번째 고양이'
     },
     {
         id: 3,
-        src: require('./img/cat3.jpg'),
+        src: require('../img/cat3.jpg'),
         name: '세번째 고양이'
     }
 ];

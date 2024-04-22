@@ -5,9 +5,9 @@ import StarIcon from '@mui/icons-material/Star';
 import { useNavigate } from 'react-router-dom';
 
 const RstrCardContainer = styled.div`
-    margin: 5px;
+    margin: 5px 8px;
     padding: 0.5rem;
-    width: 170px;
+    width: 167px;
     border-radius: 10px;
     border: 1px solid ${palette.lightblue};
     box-shadow: 2px 1px 2px ${palette.gray};

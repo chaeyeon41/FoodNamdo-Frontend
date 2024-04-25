@@ -12,7 +12,7 @@ import RstrListPage from './pages/rstr/list/RstrListPage';
 import IdAuthPage from './pages/auth/IdAuthPage';
 import PwAuthPage from './pages/auth/PwAuthPage';
 import UpArrow from './components/common/UpArrow';
-
+import SearchBar from './components/common/SearchBar';
 function App() {
   return (
     <div className={'common-container'} style={{ fontFamily: 'Gmarket Sans Medium' }}>
@@ -22,7 +22,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />} />
-
           {/* 회원 인증 페이지들 */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />
@@ -34,6 +33,7 @@ function App() {
           <Route path="/rstr" element={<RstrListPage />} />
         </Routes>
       </Router>
+      <SearchBar />
       {/* <UpArrow /> */}
     </div>
   );

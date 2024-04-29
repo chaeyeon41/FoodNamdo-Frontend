@@ -44,14 +44,6 @@ const PageButton = styled.button`
 const RstrList = () => {
 
     const [rstrList, setrstrList] = useState([]);
-    // const [currentPage, setCurrentPage] = useState(1);
-    // const pageSize = 8;
-    // const pageCount = Math.ceil(rstrList.length / pageSize);
-    // const currentPageData = rstrList.slice((currentPage - 1) * pageSize, currentPage * pageSize);
-
-    // const handlePageChange = (page) => {
-    //     setCurrentPage(page);
-    // }
 
     const location = useLocation();
     const query = new URLSearchParams(location.search);
@@ -75,7 +67,7 @@ const RstrList = () => {
                     renderItem={(item) => (
                         <PaginationItem
                             component={Link}
-                            to={`/${item.page === 1 ? '' : `page=${item.page}`}`}
+                            to={`/${item.page === 1 ? 'rstr' : `rstr?page=${item.page}`}`}
                             {...item}
                         />
                     )}

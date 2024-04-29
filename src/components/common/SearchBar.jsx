@@ -9,6 +9,7 @@ import PhotoSizeSelectActualOutlinedIcon from '@mui/icons-material/PhotoSizeSele
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -40,7 +41,15 @@ const modalContentStyle = {
     height: '100%',
     color: `${palette.gray}`,
     fontSize: '0.9rem',
+    cursor: 'pointer',
 }
+
+const closeButtonStyle = {
+    position: 'absolute',
+    top: 10,
+    right: 15,
+    cursor: 'pointer',
+};
 
 const Container = styled.div`
     display: flex;
@@ -166,6 +175,9 @@ const SearchBar = () => {
                     aria-describedby="modal-modal-description"
                 >
                     <Box className='centered-flex' sx={modalStyle}>
+                        <Box sx={closeButtonStyle} onClick={handleClose}>
+                            <CloseRoundedIcon />
+                        </Box>
                         <Typography id="modal-modal-title" variant="h5" component="h2"
                             sx={{ color: palette.darkblue2, fontWeight: 'bold' }}
                         >

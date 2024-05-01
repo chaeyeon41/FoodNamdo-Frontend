@@ -1,22 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
-import AdditionInfo from '../../../components/Rstr/Detail/AdditionInfo';
+import palette from '../../../../styles/palette';
+import AdditionInfo from './AdditionInfo';
+import RstrMap from './RstrMap';
 
 const RstrDetailInfoContainer = styled.div`
     padding: 10px;
 `;
 
 const InfoContainer = styled.div`
-    margin-bottom: 3rem;
+    margin: 2.5rem 0;
 `;
 
 const InfoTitle = styled.div`
     font-family: 'Gmarket Sans Medium';
     font-size: 1.5rem;
+    color: ${palette.darkblue2}
 `;
 
 const InfoContent = styled.div`
     margin-top: 0.8rem;
+    font-size: 0.9rem;
 `;
 
 const RstrDetailInfo = () => {
@@ -45,7 +49,10 @@ const RstrDetailInfo = () => {
             </InfoContainer>
             <InfoContainer>
                 <InfoTitle>음식점 위치</InfoTitle>
-                <InfoContent></InfoContent>
+                <InfoContent>
+                    <div>경상남도 사천시 각산로 54</div>
+                    <RstrMap />
+                </InfoContent>
             </InfoContainer>
         </RstrDetailInfoContainer>
     )

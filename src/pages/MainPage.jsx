@@ -1,10 +1,13 @@
 import React from 'react';
+import Header from '../containers/Header/Header';
+import Main from '../containers/Main/Main';
 
 const MainPage = () => {
     return (
-        <div className='.common-container'>
-            메인페이지
-        </div>
+        <>
+        <Header/>
+        <Main/>
+        </>
     )
 }
 

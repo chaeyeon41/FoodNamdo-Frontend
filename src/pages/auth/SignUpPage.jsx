@@ -194,9 +194,6 @@ const SignUpPage = () => {
                         onBlur={() => setFocused(null)}
                         maxLength={6}
                     />
-                    <div className="btn">
-                        인증확인
-                    </div>
                 </div>
                 <button
                     className="auth-button"

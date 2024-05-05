@@ -3,7 +3,6 @@
 }
 
 .headerContainer {
-  width: 60%;
   height: 10vh;
 }
 
@@ -18,8 +17,8 @@
 
 .logoImage {
   margin-left: 3%;
-  width: 100px;
-  height: 80px;
+  width: 85px;
+  height: 70px;
 }
 
 .searchBerContain {

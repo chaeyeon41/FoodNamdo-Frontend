@@ -1,92 +1,15 @@
-* {
-  margin: 0 auto;
-  font-family: 'Gmarket Sans Medium';
+.backgroundColor {
+    background-color: #F9F7F7;
 }
 
-.mainContainer {
-  width: 60%;
-  height: 100%;
+.div {
+    display: flex;
+    justify-content: center;
 }
 
-
-.mainHeader {
-  display: flex;
-  width: 100%;
-  height: 5vh;
-  background-color: #DBE2EF;
-}
-
-.namdoText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  font-size: 20px;
-}
-
-.namdoText:hover {
-  color: #555555;
-}
-
-.recommendContain {
-  margin-top: 2%;
-  width: 90%;
-  height: 30%;
-  background-color: #DBE2EF;
-  border-radius: 10px;
-}
-
-.recommendText {
-  padding-top: 1%;
-  margin-bottom: 1%;
-  margin-left: 3%;
-  font-size: 30px;
-}
-
-.recImgContain {
-  display: flex;
-  justify-content: center;
-}
-
-.recImgDiv {
-  margin: 0;
-  margin-top: 1%;
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-bottom: 3%;
-}
-
-.recommendStoreImg {
-  display: flex;
-  justify-content: center;
-  width: 250px;
-  height: 250px;
-  border-radius: 10px;
-}
-
-.imgText{
-  padding-top: 5%;
-  padding-left: 1%;
-  font-size: 23px;
-}
-
-.bottomDiv {
-  background-color: lawngreen;
-  display: flex;
-  margin-top: 3%;
-}
-
-.bottomImgDiv {
-  background-color: aquamarine;
-  display: inline-block;
-}
-
-.bestStoreDiv {
-  display: flex;
-  justify-content: left;
-}
-
-.bottomTextDiv {
-  background-color: chocolate;
+.div2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
 }

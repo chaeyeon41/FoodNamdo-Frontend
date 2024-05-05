@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../Header/Header.module.css';
 import FoodNamdoLogo from '../Header/FoodNamdoLogo.png';
-import { CiSearch } from "react-icons/ci";
 import SearchBar from '../../components/common/SearchBar';
 
 const Header = () => {

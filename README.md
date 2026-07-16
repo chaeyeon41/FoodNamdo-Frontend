@@ -1,22 +1,25 @@
-FoodNamdo
+# FoodNamdo
 
 이미지 기반 음식점 검색과 객관적인 리뷰 서비스를 제공하는 음식점 리뷰 플랫폼
 
 기존 음식점 플랫폼의 광고성 리뷰와 텍스트 검색의 한계를 개선하기 위해 개발한 프로젝트입니다.
 사용자는 이미지 업로드를 통해 유사한 음식점을 검색할 수 있으며, 다양한 카테고리별 평점과 리뷰를 확인할 수 있습니다.
 
-📅 Project
+
+### 📅 Project
 
 2024.01 ~ 2024.06
 
 팀 프로젝트 (Frontend)
 
-👥 Team
+
+### 👥 Team
 역할	인원
 Frontend	2명
 Backend	2명
 
-📌 Problem
+
+### 📌 Problem
 
 기존 음식점 플랫폼은 다음과 같은 문제점이 있었습니다.
 
@@ -26,7 +29,8 @@ Backend	2명
 
 이를 해결하기 위해 객관적인 리뷰 시스템과 이미지 기반 검색 기능을 제공하는 서비스를 개발했습니다.
 
-✨ Features
+
+### ✨ Features
 회원 기능
 회원가입
 로그인 / 로그아웃
@@ -46,7 +50,8 @@ JWT 인증
 음식점명 검색
 이미지 기반 음식점 검색
 
-🛠 Tech Stack
+
+### 🛠 Tech Stack
 Frontend
 React
 JavaScript
@@ -65,7 +70,7 @@ GitHub
 Figma
 VS Code
 
-🙋 My Role
+### 🙋 My Role
 Frontend 개발
 React 기반 UI 구현
 JWT 로그인/회원 인증 화면 구현
@@ -76,7 +81,8 @@ JWT 로그인/회원 인증 화면 구현
 REST API 연동
 Context API를 활용한 상태 관리
 
-💡 What I Learned
+
+### 💡 What I Learned
 
 이번 프로젝트를 통해 가장 크게 배운 것은 사용자 경험을 고려한 기능 구현의 중요성이었습니다.
 
@@ -86,13 +92,9 @@ Context API를 활용한 상태 관리
 
 프로젝트를 진행하면서 Git, GitHub를 활용한 협업과 Figma를 통한 UI 설계, 팀원들과의 소통이 프로젝트의 완성도에 큰 영향을 준다는 점도 함께 배울 수 있었습니다.
 
-📷 Preview
-Login	Main
-<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/8beb0ed5-f655-4579-9ef4-920c292964c3" />
+### 📷 Preview
+<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/8beb0ed5-f655-4579-9ef4-920c292964c3" />
+<img width="1089" height="413" alt="image (3)" src="https://github.com/user-attachments/assets/2a27e850-a3a0-4fb6-abe2-3d99c5dfe9d8" />
 <img width="1000" height="600" alt="image (1)" src="https://github.com/user-attachments/assets/98dc767d-a667-4787-9b25-903a1ffa2cbc" />
-
-Restaurant	Image Search
 <img width="834" height="1162" alt="image (2)" src="https://github.com/user-attachments/assets/e6f1a9a6-fb7b-41d7-b6ab-a2d4668d7cdf" />
-	이미지 검색
-Review	My Page
-리뷰	마이페이지
+

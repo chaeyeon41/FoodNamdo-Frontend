@@ -5,6 +5,7 @@
 기존 음식점 플랫폼의 광고성 리뷰와 텍스트 검색의 한계를 개선하기 위해 개발한 프로젝트입니다.
 사용자는 이미지 업로드를 통해 유사한 음식점을 검색할 수 있으며, 다양한 카테고리별 평점과 리뷰를 확인할 수 있습니다.
 
+---
 
 ### 📅 Project
 
@@ -12,12 +13,14 @@
 
 팀 프로젝트 (Frontend)
 
+---
 
 ### 👥 Team
 역할	인원
 Frontend	2명
 Backend	2명
 
+---
 
 ### 📌 Problem
 
@@ -29,6 +32,7 @@ Backend	2명
 
 이를 해결하기 위해 객관적인 리뷰 시스템과 이미지 기반 검색 기능을 제공하는 서비스를 개발했습니다.
 
+---
 
 ### ✨ Features
 회원 기능
@@ -50,6 +54,7 @@ JWT 인증
 음식점명 검색
 이미지 기반 음식점 검색
 
+---
 
 ### 🛠 Tech Stack
 Frontend
@@ -70,6 +75,8 @@ GitHub
 Figma
 VS Code
 
+---
+
 ### 🙋 My Role
 Frontend 개발
 React 기반 UI 구현
@@ -81,6 +88,7 @@ JWT 로그인/회원 인증 화면 구현
 REST API 연동
 Context API를 활용한 상태 관리
 
+---
 
 ### 💡 What I Learned
 
@@ -91,6 +99,8 @@ Context API를 활용한 상태 관리
 또한 Context API를 활용한 상태 관리와 REST API 연동을 경험하며 프론트엔드에서 데이터 흐름을 설계하는 방법을 익힐 수 있었습니다.
 
 프로젝트를 진행하면서 Git, GitHub를 활용한 협업과 Figma를 통한 UI 설계, 팀원들과의 소통이 프로젝트의 완성도에 큰 영향을 준다는 점도 함께 배울 수 있었습니다.
+
+---
 
 ### 📷 Preview
 <img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/8beb0ed5-f655-4579-9ef4-920c292964c3" />

@@ -88,8 +88,8 @@ Context API를 활용한 상태 관리
 
 📷 Preview
 Login	Main
-<img width="968" height="521" alt="image" src="https://github.com/user-attachments/assets/8beb0ed5-f655-4579-9ef4-920c292964c3" />
-<img width="1333" height="879" alt="image (1)" src="https://github.com/user-attachments/assets/98dc767d-a667-4787-9b25-903a1ffa2cbc" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/8beb0ed5-f655-4579-9ef4-920c292964c3" />
+<img width="1000" height="600" alt="image (1)" src="https://github.com/user-attachments/assets/98dc767d-a667-4787-9b25-903a1ffa2cbc" />
 
 Restaurant	Image Search
 <img width="834" height="1162" alt="image (2)" src="https://github.com/user-attachments/assets/e6f1a9a6-fb7b-41d7-b6ab-a2d4668d7cdf" />

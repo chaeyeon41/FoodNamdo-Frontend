@@ -125,9 +125,12 @@ Figma를 통한 UI 설계
 # 📷 Preview
 ## 메인 화면
 <img width="900" src="https://github.com/user-attachments/assets/8beb0ed5-f655-4579-9ef4-920c292964c3" />
+
 ## 음식점 목록
 <img width="1000" src="https://github.com/user-attachments/assets/98dc767d-a667-4787-9b25-903a1ffa2cbc" />
+
 ## 상세 페이지
 <img width="834" src="https://github.com/user-attachments/assets/e6f1a9a6-fb7b-41d7-b6ab-a2d4668d7cdf" />
+
 ## 이미지 검색
 <img width="1089" src="https://github.com/user-attachments/assets/2a27e850-a3a0-4fb6-abe2-3d99c5dfe9d8" />

@@ -1,4 +1,4 @@
-## 🍽️ FoodNamdo
+# 🍽️ FoodNamdo
 
 이미지 기반 음식점 검색과 객관적인 리뷰를 제공하는 음식점 추천 플랫폼
 
@@ -8,14 +8,14 @@
 
 ---
 
-## 📅 Project
+# 📅 Project
 기간 : 2024.01 ~ 2024.06
 형태 : 팀 프로젝트
 Frontend 2명 / Backend 2명
 
 ---
 
-## 🚀 Problem
+# 🚀 Problem
 
 기존 음식점 플랫폼은 다음과 같은 한계가 있었습니다.
 
@@ -27,27 +27,27 @@ Frontend 2명 / Backend 2명
 
 ---
 
-## ✨ 주요 기능
-👤 회원
+# ✨ 주요 기능
+## 👤 회원
 회원가입
 로그인 / 로그아웃
 JWT 기반 사용자 인증
 아이디 / 비밀번호 찾기
-🍽 음식점
+## 🍽 음식점
 음식점 목록 조회
 음식점 상세 조회
 지역 및 카테고리 필터
 음식점 찜 기능
-⭐ 리뷰
+## ⭐ 리뷰
 리뷰 작성 / 수정 / 삭제
 카테고리별 평점 제공
-🔍 검색
+## 🔍 검색
 음식점 이름 검색
 이미지 기반 음식점 검색
 
 ---
  
-## 🛠 Tech Stack
+# 🛠 Tech Stack
 | Category | Tech |
 |----------|------|
 | **Frontend** | React, JavaScript, HTML5, CSS3 |
@@ -58,7 +58,7 @@ JWT 기반 사용자 인증
 
 ---
 
-## 👨‍💻 My Role
+# 👨‍💻 My Role
 담당 기능
 React 기반 메인 UI 구현
 JWT 로그인 및 인증 기능 구현
@@ -71,7 +71,7 @@ Context API를 활용한 전역 상태 관리
 
 ---
 
-## ⚙️ Technical Challenge
+# ⚙️ Technical Challenge
 
 프로젝트에서는 다양한 화면에서 동일한 음식점 데이터를 활용해야 했습니다.
 
@@ -82,8 +82,7 @@ Context API를 활용한 전역 상태 관리
 또한 이미지 검색 기능을 구현하면서 업로드 상태와 검색 결과를 비동기적으로 처리해야 했기 때문에 API 응답 상태에 따른 UI 처리를 고려하며 사용자 경험을 개선했습니다.
 
 ---
-
-## 💡 What I Learned
+# 💡 What I Learned
 
 이번 프로젝트를 통해 가장 크게 배운 점은 사용자 경험을 고려한 기능 설계의 중요성이었습니다.
 
@@ -101,12 +100,12 @@ Figma를 통한 UI 설계
 
 ---
 
-## 📷 Preview
-메인 화면
+# 📷 Preview
+## 메인 화면
 <img width="900" src="https://github.com/user-attachments/assets/8beb0ed5-f655-4579-9ef4-920c292964c3" />
-음식점 목록
+## 음식점 목록
 <img width="1000" src="https://github.com/user-attachments/assets/98dc767d-a667-4787-9b25-903a1ffa2cbc" />
-상세 페이지
+## 상세 페이지
 <img width="834" src="https://github.com/user-attachments/assets/e6f1a9a6-fb7b-41d7-b6ab-a2d4668d7cdf" />
-이미지 검색
+## 이미지 검색
 <img width="1089" src="https://github.com/user-attachments/assets/2a27e850-a3a0-4fb6-abe2-3d99c5dfe9d8" />
